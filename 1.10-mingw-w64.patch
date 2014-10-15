@@ -1,0 +1,11 @@
+--- origsrc/login/winpriv.c	2009-04-20 20:13:26.000000000 -0500
++++ src/login/winpriv.c	2014-10-15 00:47:57.933616700 -0500
+@@ -50,7 +50,7 @@
+ #include <wininet.h>
+ #include <lmcons.h>
+ #include <ntsecapi.h>
+-#include <ddk/ntstatus.h>
++#include <ntstatus.h>
+ 
+ /* Macros */
+ #define NTCHECKERROR(StatusWanted,LogLevel,Function,API,retval) if(retval!=StatusWanted) { \

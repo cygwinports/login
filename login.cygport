@@ -1,0 +1,19 @@
+CVS_URI=":pserver:anoncvs@cygwin.com:/cvs/cygwin-apps"
+CVS_MODULE="login"
+CVS_BRANCH=v${PV//\./_}
+inherit cvs
+
+NAME="login"
+VERSION=1.10
+RELEASE=10
+CATEGORY="Base"
+SUMMARY="Sign on to a system"
+HOMEPAGE="http://cygwin.com/"
+
+PATCH_URI="1.10-mingw-w64.patch"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake CC=${CC} CFLAGS="${CFLAGS}"
+}
