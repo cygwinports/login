@@ -4,13 +4,11 @@ CVS_BRANCH=v${PV//\./_}
 inherit cvs
 
 NAME="login"
-VERSION=1.10
-RELEASE=10
+VERSION=1.11
+RELEASE=1
 CATEGORY="Base"
 SUMMARY="Sign on to a system"
 HOMEPAGE="http://cygwin.com/"
-
-PATCH_URI="1.10-mingw-w64.patch"
 
 src_compile() {
 	lndirs
